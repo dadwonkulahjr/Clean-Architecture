@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aWorkshop.WebUI", "aWorkshop.WebUI\aWorkshop.WebUI.csproj", "{7D0C2A4D-FDF8-40E8-86B6-BBA9C5071370}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "aWorkshop.WebUI", "aWorkshop.WebUI\aWorkshop.WebUI.csproj", "{7D0C2A4D-FDF8-40E8-86B6-BBA9C5071370}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaWorkshop.Domain", "CaWorkshop.Domain\CaWorkshop.Domain.csproj", "{BAF638F8-1661-4216-8310-2984FC85D410}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaWorkshop.Application", "CaWorkshop.Application\CaWorkshop.Application.csproj", "{0D08523B-7BC3-4A9F-AD23-795DFAE22BBA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{7D0C2A4D-FDF8-40E8-86B6-BBA9C5071370}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D0C2A4D-FDF8-40E8-86B6-BBA9C5071370}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7D0C2A4D-FDF8-40E8-86B6-BBA9C5071370}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAF638F8-1661-4216-8310-2984FC85D410}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAF638F8-1661-4216-8310-2984FC85D410}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAF638F8-1661-4216-8310-2984FC85D410}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAF638F8-1661-4216-8310-2984FC85D410}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D08523B-7BC3-4A9F-AD23-795DFAE22BBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D08523B-7BC3-4A9F-AD23-795DFAE22BBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D08523B-7BC3-4A9F-AD23-795DFAE22BBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D08523B-7BC3-4A9F-AD23-795DFAE22BBA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -23,7 +23,7 @@ namespace aWorkshop.WebUI
                     context.Database.Migrate();
                     ApplicationDbContextSeeder.Seed(context);
                 }
-                catch (System.Exception ex)
+                catch (System.Exception)
                 {
                     var logger = services.GetRequiredService<ILogger<Program>>();
 
