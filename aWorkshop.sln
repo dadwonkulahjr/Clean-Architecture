@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaWorkshop.Domain", "CaWork
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaWorkshop.Application", "CaWorkshop.Application\CaWorkshop.Application.csproj", "{0D08523B-7BC3-4A9F-AD23-795DFAE22BBA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaWorkshop.Infrastructure", "CaWorkshop.Infrastructure\CaWorkshop.Infrastructure.csproj", "{49837485-049D-464D-98FD-875BD27B98FA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{0D08523B-7BC3-4A9F-AD23-795DFAE22BBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0D08523B-7BC3-4A9F-AD23-795DFAE22BBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0D08523B-7BC3-4A9F-AD23-795DFAE22BBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49837485-049D-464D-98FD-875BD27B98FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49837485-049D-464D-98FD-875BD27B98FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49837485-049D-464D-98FD-875BD27B98FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49837485-049D-464D-98FD-875BD27B98FA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
