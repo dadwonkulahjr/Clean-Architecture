@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace aWorkshop.WebUI.Migrations
+namespace CaWorkshop.Infrastructure.Persistence.Migrations
 {
     public partial class Initialmigration : Migration
     {

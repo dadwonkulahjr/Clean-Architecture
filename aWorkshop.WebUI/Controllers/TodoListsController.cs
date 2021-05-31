@@ -3,8 +3,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using aWorkshop.WebUI.Data;
-using aWorkshop.WebUI.Models;
+using CaWorkshop.Domain.Entities;
+using CaWorkshop.Infrastructure.Persistence;
 
 namespace aWorkshop.WebUI.Controllers
 {
@@ -18,8 +18,6 @@ namespace aWorkshop.WebUI.Controllers
         {
             _context = context;
         }
-
-       
         [HttpGet]
         public async Task<ActionResult<IEnumerable<TodoList>>> GetTodoLists()
         {

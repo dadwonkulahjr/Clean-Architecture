@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity;
 
 
-namespace aWorkshop.WebUI.Models
+namespace CaWorkshop.Infrastructure
 {
     public class ApplicationUser : IdentityUser
     {

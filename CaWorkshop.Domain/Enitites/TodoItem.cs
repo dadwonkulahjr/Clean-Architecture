@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace aWorkshop.WebUI.Models
+namespace CaWorkshop.Domain.Entities
 {
     public class TodoItem
     {
@@ -9,11 +9,8 @@ namespace aWorkshop.WebUI.Models
 
         public int ListId { get; set; }
 
-        [Required]
-        [StringLength(280)]
         public string Title { get; set; }
 
-        [StringLength(4000)]
         public string Note { get; set; }
 
         public bool Done { get; set; }

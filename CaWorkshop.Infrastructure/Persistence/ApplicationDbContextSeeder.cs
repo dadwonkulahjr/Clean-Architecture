@@ -1,8 +1,8 @@
-﻿using aWorkshop.WebUI.Models;
+﻿using CaWorkshop.Domain.Entities;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace aWorkshop.WebUI.Data
+namespace CaWorkshop.Infrastructure.Persistence
 {
     public static class ApplicationDbContextSeeder
     {
