@@ -23,24 +23,33 @@ namespace aWorkshop.WebUI.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<TodoList>>> GetTodoLists()
         {
-            return await _context.TodoLists.ToListAsync();
-        }
-
-     
-        [HttpGet("{id}")]
-        public async Task<ActionResult<TodoList>> GetTodoList(int id)
-        {
-            var todoList = await _context.TodoLists.FindAsync(id);
-
-            if (todoList == null)
+            return await _context.TodoLists.Select(l => new TodoList()
             {
-                return NotFound();
-            }
-
-            return todoList;
+                Id = l.Id,
+                Title = l.Title,
+                Items = l.Items.Select(i => new TodoItem
+                {
+                    Id = i.Id,
+                    ListId = i.ListId,
+                    Title = i.Title,
+                    Done = i.Done,
+                    Priority = i.Priority,
+                    Note = i.Note
+                }).ToList()
+            }).ToListAsync();
         }
+        //[HttpGet("{id}")]
+        //public async Task<ActionResult<TodoList>> GetTodoList(int id)
+        //{
+        //    var todoList = await _context.TodoLists.FindAsync(id);
 
-       
+        //    if (todoList == null)
+        //    {
+        //        return NotFound();
+        //    }
+
+        //    return todoList;
+        //}
         [HttpPut("{id}")]
         public async Task<IActionResult> PutTodoList(int id, TodoList todoList)
         {
@@ -71,12 +80,11 @@ namespace aWorkshop.WebUI.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<TodoList>> PostTodoList(TodoList todoList)
+        public async Task<ActionResult<int>> PostTodoList(TodoList todoList)
         {
             _context.TodoLists.Add(todoList);
             await _context.SaveChangesAsync();
-
-            return CreatedAtAction("GetTodoList", new { id = todoList.Id }, todoList);
+            return todoList.Id;
         }
 
         [HttpDelete("{id}")]

@@ -19,26 +19,24 @@ namespace aWorkshop.WebUI.Controllers
             _context = context;
         }
 
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<TodoItem>>> GetTodoItems()
-        {
-            return await _context.TodoItems.ToListAsync();
-        }
+        //[HttpGet]
+        //public async Task<ActionResult<IEnumerable<TodoItem>>> GetTodoItems()
+        //{
+        //    return await _context.TodoItems.ToListAsync();
+        //}
 
-        [HttpGet("{id}")]
-        public async Task<ActionResult<TodoItem>> GetTodoItem(long id)
-        {
-            var todoItem = await _context.TodoItems.FindAsync(id);
+        //[HttpGet("{id}")]
+        //public async Task<ActionResult<TodoItem>> GetTodoItem(long id)
+        //{
+        //    var todoItem = await _context.TodoItems.FindAsync(id);
 
-            if (todoItem == null)
-            {
-                return NotFound();
-            }
+        //    if (todoItem == null)
+        //    {
+        //        return NotFound();
+        //    }
 
-            return todoItem;
-        }
-
-        
+        //    return todoItem;
+        //}
         [HttpPut("{id}")]
         public async Task<IActionResult> PutTodoItem(long id, TodoItem todoItem)
         {
@@ -70,12 +68,12 @@ namespace aWorkshop.WebUI.Controllers
 
       
         [HttpPost]
-        public async Task<ActionResult<TodoItem>> PostTodoItem(TodoItem todoItem)
+        public async Task<ActionResult<long>> PostTodoItem(TodoItem todoItem)
         {
             _context.TodoItems.Add(todoItem);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetTodoItem", new { id = todoItem.Id }, todoItem);
+            return todoItem.Id;
         }
 
       

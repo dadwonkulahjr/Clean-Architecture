@@ -45,6 +45,10 @@ namespace aWorkshop.WebUI
             {
                 configuration.RootPath = "ClientApp/dist";
             });
+            services.AddOpenApiDocument(configure =>
+            {
+                configure.Title = "CaWorkshop API";
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -68,7 +72,12 @@ namespace aWorkshop.WebUI
                 app.UseSpaStaticFiles();
             }
 
+            app.UseOpenApi();
+            app.UseSwaggerUi3();
+
             app.UseRouting();
+         
+
 
             app.UseAuthentication();
             app.UseIdentityServer();
@@ -91,6 +100,9 @@ namespace aWorkshop.WebUI
                 {
                     spa.UseAngularCliServer(npmScript: "start");
                     //spa.UseProxyToSpaDevelopmentServer("https://localhost:44327/");
+                
+                
+                
                 }
             });
         }
