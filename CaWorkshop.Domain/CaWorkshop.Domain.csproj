@@ -9,10 +9,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CaWorkshop.Application\CaWorkshop.Application.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Folder Include="Enitites\" />
   </ItemGroup>
 

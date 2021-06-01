@@ -1070,6 +1070,7 @@
       },
       "CaWorkshop.Application/1.0.0": {
         "dependencies": {
+          "CaWorkshop.Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.6",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0"
         },
@@ -1079,7 +1080,6 @@
       },
       "CaWorkshop.Domain/1.0.0": {
         "dependencies": {
-          "CaWorkshop.Application": "1.0.0",
           "System.ComponentModel.Annotations": "5.0.0"
         },
         "runtime": {

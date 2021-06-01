@@ -8,7 +8,7 @@ namespace CaWorkshop.Infrastructure.Persistence
     {
         public static void Seed(ApplicationDbContext applicationDbContext)
         {
-            if (applicationDbContext.TodoLists.Any())
+            if (applicationDbContext.TodoItems.Any())
             {
                 return;
             }

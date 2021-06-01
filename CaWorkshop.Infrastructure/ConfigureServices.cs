@@ -3,6 +3,7 @@ using Microsoft.Extensions.Configuration;
 using CaWorkshop.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Authentication;
+using CaWorkshop.Application.Common.Interfaces;
 
 namespace CaWorkshop.Infrastructure
 {
@@ -22,6 +23,11 @@ namespace CaWorkshop.Infrastructure
            
             services.AddAuthentication()
                     .AddIdentityServerJwt();
+
+            services.AddScoped<IApplicationDbContext>(p =>
+            {
+               return p.GetRequiredService<ApplicationDbContext>();
+            });
 
             return services;
         }

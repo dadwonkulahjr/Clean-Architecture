@@ -6,7 +6,6 @@ using Microsoft.AspNetCore.SpaServices.AngularCli;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.EntityFrameworkCore;
 
 
 namespace aWorkshop.WebUI
@@ -25,6 +24,7 @@ namespace aWorkshop.WebUI
 
             services.AddInfrastructureServices(Configuration);
             services.AddApplicatonServices();
+
            
             //services.AddDbContext<ApplicationDbContext>(options =>
             //    options.UseSqlServer(

@@ -1,9 +1,12 @@
 ﻿using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using CaWorkshop.Domain.Entities;
-using CaWorkshop.Infrastructure.Persistence;
+using MediatR;
+using System.Collections.Generic;
+using CaWorkshop.Application.TodoItems.Commands.CreateTodoItem;
+using CaWorkshop.Application.TodoItems.Commands.UpdateTodoItem;
+using CaWorkshop.Application.TodoItems.Commands.DeleteTodoItem;
 
 namespace aWorkshop.WebUI.Controllers
 {
@@ -11,89 +14,48 @@ namespace aWorkshop.WebUI.Controllers
     [ApiController]
     public class TodoItemsController : ControllerBase
     {
-        private readonly ApplicationDbContext _context;
+        private readonly IMediator _mediator;
 
-        public TodoItemsController(ApplicationDbContext context)
+        public TodoItemsController(IMediator mediator)
         {
-            _context = context;
+            _mediator = mediator;
         }
-
-        //[HttpGet]
-        //public async Task<ActionResult<IEnumerable<TodoItem>>> GetTodoItems()
-        //{
-        //    return await _context.TodoItems.ToListAsync();
-        //}
-
         //[HttpGet("{id}")]
-        //public async Task<ActionResult<TodoItem>> GetTodoItem(long id)
+        //public async Task<ActionResult<TodoList>> GetTodoList(int id)
         //{
-        //    var todoItem = await _context.TodoItems.FindAsync(id);
+        //    var todoList = await _context.TodoLists.FindAsync(id);
 
-        //    if (todoItem == null)
+        //    if (todoList == null)
         //    {
         //        return NotFound();
         //    }
 
-        //    return todoItem;
+        //    return todoList;
         //}
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutTodoItem(long id, TodoItem todoItem)
+        public async Task<IActionResult> PutTodoList(long id, UpdateTodoItemCommand updateTodoItemCommand)
         {
-            if (id != todoItem.Id)
+            if (id != updateTodoItemCommand.Id)
             {
                 return BadRequest();
             }
-
-            _context.Entry(todoItem).State = EntityState.Modified;
-
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!TodoItemExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
-
+            await _mediator.Send(updateTodoItemCommand);
             return NoContent();
         }
-
-      
         [HttpPost]
-        public async Task<ActionResult<long>> PostTodoItem(TodoItem todoItem)
+        public async Task<ActionResult<long>> PostTodoItem(CreateTodoItemCommand createTodoItemCommand)
         {
-            _context.TodoItems.Add(todoItem);
-            await _context.SaveChangesAsync();
-
-            return todoItem.Id;
+           return await _mediator.Send(createTodoItemCommand);
         }
-
-      
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteTodoItem(long id)
+        public async Task<IActionResult> DeleteTodoList(long id)
         {
-            var todoItem = await _context.TodoItems.FindAsync(id);
-            if (todoItem == null)
-            {
-                return NotFound();
-            }
-
-            _context.TodoItems.Remove(todoItem);
-            await _context.SaveChangesAsync();
-
+            await _mediator.Send(new DeleteTodoItemCommand() { Id = id });
             return NoContent();
         }
-
-        private bool TodoItemExists(long id)
-        {
-            return _context.TodoItems.Any(e => e.Id == id);
-        }
+        ////private bool TodoItemExists(long id)
+        //{
+        //    return _context.TodoItems.Any(e => e.Id == id);
+        //}
     }
 }

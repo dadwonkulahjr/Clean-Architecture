@@ -10,3 +10,6 @@ C:\Users\Dad S. Wonkulah Jr\source\repos\aWorkshop\CaWorkshop.Application\obj\De
 C:\Users\Dad S. Wonkulah Jr\source\repos\aWorkshop\CaWorkshop.Application\obj\Debug\net5.0\CaWorkshop.Application.dll
 C:\Users\Dad S. Wonkulah Jr\source\repos\aWorkshop\CaWorkshop.Application\obj\Debug\net5.0\ref\CaWorkshop.Application.dll
 C:\Users\Dad S. Wonkulah Jr\source\repos\aWorkshop\CaWorkshop.Application\obj\Debug\net5.0\CaWorkshop.Application.pdb
+C:\Users\Dad S. Wonkulah Jr\source\repos\aWorkshop\CaWorkshop.Application\bin\Debug\net5.0\CaWorkshop.Domain.dll
+C:\Users\Dad S. Wonkulah Jr\source\repos\aWorkshop\CaWorkshop.Application\bin\Debug\net5.0\CaWorkshop.Domain.pdb
+C:\Users\Dad S. Wonkulah Jr\source\repos\aWorkshop\CaWorkshop.Application\obj\Debug\net5.0\CaWorkshop.Application.csproj.CopyComplete
