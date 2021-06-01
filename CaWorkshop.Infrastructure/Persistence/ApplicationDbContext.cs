@@ -1,5 +1,4 @@
 ﻿using CaWorkshop.Domain.Entities;
-using CaWorkshop.Infrastructure;
 using IdentityServer4.EntityFramework.Options;
 using Microsoft.AspNetCore.ApiAuthorization.IdentityServer;
 using Microsoft.EntityFrameworkCore;
