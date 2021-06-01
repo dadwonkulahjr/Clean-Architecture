@@ -17,6 +17,9 @@ namespace CaWorkshop.Infrastructure
             services.AddDefaultIdentity<ApplicationUser>()
                     .AddEntityFrameworkStores<ApplicationDbContext>();
 
+            services.AddIdentityServer()
+                .AddApiAuthorization<ApplicationUser, ApplicationDbContext>();
+           
             services.AddAuthentication()
                     .AddIdentityServerJwt();
 
