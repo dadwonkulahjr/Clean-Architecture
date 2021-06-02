@@ -23,7 +23,7 @@ namespace aWorkshop.WebUI
         {
 
             services.AddInfrastructureServices(Configuration);
-            services.AddApplicatonServices();
+            services.AddApplicationServices();
 
            
             //services.AddDbContext<ApplicationDbContext>(options =>

@@ -2,6 +2,7 @@
 using CaWorkshop.Domain.Entities;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
@@ -14,34 +15,44 @@ namespace CaWorkshop.Application.TodoLists.Queries.GetTodoLists
         Task<List<TodoList>> Handle();
     }
 
-    public class GetTodoListsQuery : IRequest<List<TodoList>>
+    public class TodosVm
     {
-       
+        public List<PriorityLevelDto> PriorityLevels { get; set; }
+        public List<TodoListDto> Lists { get; set; }
     }
 
-    public class GetTodoListsQueryHandler : IRequestHandler<GetTodoListsQuery, List<TodoList>>
+    public class PriorityLevelDto
+    {
+        public int Value { get; set; }
+        public string Name { get; set; }
+    }
+    public class GetTodoListsQuery : IRequest<TodosVm>
+    {
+
+    }
+
+    public class GetTodoListsQueryHandler : IRequestHandler<GetTodoListsQuery, TodosVm>
     {
         private readonly IApplicationDbContext _dbContext;
         public GetTodoListsQueryHandler(IApplicationDbContext applicationDbContext)
         {
             _dbContext = applicationDbContext;
         }
-        public async Task<List<TodoList>> Handle(GetTodoListsQuery request, CancellationToken cancellationToken)
+        public async Task<TodosVm> Handle(GetTodoListsQuery request, CancellationToken cancellationToken)
         {
-            return await _dbContext.TodoLists.Select(l => new TodoList()
+            return new TodosVm
             {
-                Id = l.Id,
-                Title = l.Title,
-                Items = l.Items.Select(i => new TodoItem
-                {
-                    Id = i.Id,
-                    ListId = i.ListId,
-                    Title = i.Title,
-                    Done = i.Done,
-                    Priority = i.Priority,
-                    Note = i.Note
-                }).ToList()
-            }).ToListAsync(cancellationToken);
+                PriorityLevels = Enum.GetValues(typeof(PriorityLevel))
+                                       .Cast<PriorityLevel>()
+                                       .Select(p => new PriorityLevelDto
+                                       {
+                                           Value = (int)p,
+                                           Name = p.ToString()
+                                       }).ToList(),
+                Lists = await _dbContext.TodoLists
+                                        .Select(TodoListDto.Projection)
+                                        .ToListAsync(cancellationToken)
+            };
         }
 
     }

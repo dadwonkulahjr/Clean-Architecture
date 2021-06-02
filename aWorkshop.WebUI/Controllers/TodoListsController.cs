@@ -24,7 +24,7 @@ namespace aWorkshop.WebUI.Controllers
             _mediator = mediator;
         }
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<TodoList>>> GetTodoLists([FromServices] IGetTodoListsQuery query)
+        public async Task<ActionResult<TodosVm>> GetTodoLists()
         {
             return await _mediator.Send(new GetTodoListsQuery());
         }
