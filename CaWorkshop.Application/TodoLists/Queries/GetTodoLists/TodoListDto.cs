@@ -1,16 +1,20 @@
-﻿using CaWorkshop.Domain.Entities;
-using System;
+﻿using AutoMapper;
+using CaWorkshop.Application.Common.Mapping;
+using CaWorkshop.Domain.Entities;
 using System.Collections.Generic;
-using System.Linq;
-using System.Linq.Expressions;
+
 
 namespace CaWorkshop.Application.TodoLists.Queries.GetTodoLists
 {
-    public class TodoListDto
+    public class TodoListDto : IMapFrom<TodoList>
     {
         public int Id { get; set; }
         public string Title { get; set; }
         public IList<TodoItemDto> Items { get; set; }
+        //public void Mapping(Profile profile)
+        //{
+        //    profile.CreateMap<TodoList, TodoListDto>();
+        //}
 
         //public static Expression<Func<TodoList, TodoListDto>> Projection
         //{
@@ -24,7 +28,7 @@ namespace CaWorkshop.Application.TodoLists.Queries.GetTodoLists
         //                        .Select(TodoItemDto.Projection)
         //                        .ToList()
         //        };
-              
+
         //    }
         //}
     }
