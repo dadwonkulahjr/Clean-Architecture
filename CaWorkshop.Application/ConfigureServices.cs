@@ -1,4 +1,5 @@
 ﻿using CaWorkshop.Application.TodoLists.Queries.GetTodoLists;
+using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
 
@@ -12,5 +13,10 @@ namespace CaWorkshop.Application
             //services.AddTransient<IGetTodoListsQuery, GetTodoListsQuery>();
             return services;
         }
+        //public static IServiceCollection AddMediatorServices(this IServiceCollection services)
+        //{
+        //    services.AddSingleton<IMediator>();
+        //    return services;
+        //}
     }
 }

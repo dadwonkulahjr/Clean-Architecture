@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "iu+iozNMFrGG1dBq7xD6HwbrfWvPFD2R/vCJpr+2CT6ZQ7EaQsjirr4QfIiehkHSvKtw7CtBhhnykq/SExr+TQ==",
+  "dgSpecHash": "59dMZkPmg263uttthPDoKsYU4rhvXd9LiplXEMGWpXYj++LbgG7wH30CCv3oiZaTjzBcIPaD+MRrJzmdJ5rfSQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\aWorkshop\\CaWorkshop.Infrastructure\\CaWorkshop.Infrastructure.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Dad S. Wonkulah Jr\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",
+    "C:\\Users\\Dad S. Wonkulah Jr\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
+    "C:\\Users\\Dad S. Wonkulah Jr\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
     "C:\\Users\\Dad S. Wonkulah Jr\\.nuget\\packages\\identitymodel\\4.4.0\\identitymodel.4.4.0.nupkg.sha512",
     "C:\\Users\\Dad S. Wonkulah Jr\\.nuget\\packages\\identityserver4\\4.1.0\\identityserver4.4.1.0.nupkg.sha512",
     "C:\\Users\\Dad S. Wonkulah Jr\\.nuget\\packages\\identityserver4.aspnetidentity\\4.1.0\\identityserver4.aspnetidentity.4.1.0.nupkg.sha512",

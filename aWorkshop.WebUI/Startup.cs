@@ -1,12 +1,14 @@
 using CaWorkshop.Application;
+using CaWorkshop.Application.TodoLists.Queries.GetTodoLists;
 using CaWorkshop.Infrastructure;
+using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.SpaServices.AngularCli;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-
+using System.Reflection;
 
 namespace aWorkshop.WebUI
 {
@@ -24,8 +26,10 @@ namespace aWorkshop.WebUI
 
             services.AddInfrastructureServices(Configuration);
             services.AddApplicationServices();
+            services.AddMediatR(typeof(GetTodoListsQueryHandler));
+            //services.AddMediatorServices();
 
-           
+
             //services.AddDbContext<ApplicationDbContext>(options =>
             //    options.UseSqlServer(
             //        Configuration.GetConnectionString("DefaultConnection")));
