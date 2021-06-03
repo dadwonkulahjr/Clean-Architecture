@@ -1,3 +1,4 @@
+using aWorkshop.WebUI.Filters;
 using CaWorkshop.Application;
 using CaWorkshop.Application.TodoLists.Queries.GetTodoLists;
 using CaWorkshop.Infrastructure;
@@ -44,7 +45,10 @@ namespace aWorkshop.WebUI
 
             //services.AddAuthentication()
             //    .AddIdentityServerJwt();
-            services.AddControllersWithViews();
+            services.AddControllersWithViews(opt =>
+            {
+                opt.Filters.Add(new ApiExceptionFilterAttribute());
+            });
                     //.AddFluentValidation(fv =>
                     //{
                     //    fv.RegisterValidatorsFromAssemblyContaining<IApplicationDbContext>();
