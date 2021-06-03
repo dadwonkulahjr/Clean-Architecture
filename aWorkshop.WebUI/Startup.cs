@@ -8,7 +8,6 @@ using Microsoft.AspNetCore.SpaServices.AngularCli;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using System.Reflection;
 
 namespace aWorkshop.WebUI
 {
@@ -26,7 +25,7 @@ namespace aWorkshop.WebUI
 
             services.AddInfrastructureServices(Configuration);
             services.AddApplicationServices();
-            services.AddMediatR(typeof(GetTodoListsQueryHandler));
+            //services.AddMediatR(typeof(GetTodoListsQueryHandler));
             //services.AddMediatorServices();
 
 
@@ -46,6 +45,10 @@ namespace aWorkshop.WebUI
             //services.AddAuthentication()
             //    .AddIdentityServerJwt();
             services.AddControllersWithViews();
+                    //.AddFluentValidation(fv =>
+                    //{
+                    //    fv.RegisterValidatorsFromAssemblyContaining<IApplicationDbContext>();
+                    //});
             services.AddRazorPages();
             // In production, the Angular files will be served from this directory
             services.AddSpaStaticFiles(configuration =>

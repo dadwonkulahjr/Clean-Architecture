@@ -18,7 +18,8 @@ namespace CaWorkshop.Application.Common.Mapping
             var types = assembly.GetExportedTypes()
                                 .Where(t => t.GetInterfaces()
                                 .Any(i => i.IsGenericType
-                                && i.GetGenericTypeDefinition() == typeof(IMapFrom<MappingProfile>)));
+                                && i.GetGenericTypeDefinition() == typeof(IMapFrom<MappingProfile>)))
+                                .ToList();
 
 
             foreach (var type in types)

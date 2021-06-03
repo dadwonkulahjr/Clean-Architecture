@@ -11,7 +11,6 @@ namespace CaWorkshop.Application.TodoLists.Commands.UpdateTodoList
     public class UpdateTodoListCommand : IRequest
     {
         public int Id { get; set; }
-        [Required, StringLength(240)]
         public string Title { get; set; }
 
     }
