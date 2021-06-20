@@ -10,3 +10,15 @@ C:\Users\Dad S. Wonkulah Jr\source\repos\aWorkshop\CaWorkshop.Domain\bin\Debug\n
 C:\Users\Dad S. Wonkulah Jr\source\repos\aWorkshop\CaWorkshop.Domain\obj\Debug\net5.0\CaWorkshop.Domain.dll
 C:\Users\Dad S. Wonkulah Jr\source\repos\aWorkshop\CaWorkshop.Domain\obj\Debug\net5.0\ref\CaWorkshop.Domain.dll
 C:\Users\Dad S. Wonkulah Jr\source\repos\aWorkshop\CaWorkshop.Domain\obj\Debug\net5.0\CaWorkshop.Domain.pdb
+C:\Users\Dad S. Wonkulah Jr\source\repos\Clean-Architecture\CaWorkshop.Domain\bin\Debug\net5.0\CaWorkshop.Domain.deps.json
+C:\Users\Dad S. Wonkulah Jr\source\repos\Clean-Architecture\CaWorkshop.Domain\bin\Debug\net5.0\CaWorkshop.Domain.dll
+C:\Users\Dad S. Wonkulah Jr\source\repos\Clean-Architecture\CaWorkshop.Domain\bin\Debug\net5.0\ref\CaWorkshop.Domain.dll
+C:\Users\Dad S. Wonkulah Jr\source\repos\Clean-Architecture\CaWorkshop.Domain\bin\Debug\net5.0\CaWorkshop.Domain.pdb
+C:\Users\Dad S. Wonkulah Jr\source\repos\Clean-Architecture\CaWorkshop.Domain\obj\Debug\net5.0\CaWorkshop.Domain.csprojAssemblyReference.cache
+C:\Users\Dad S. Wonkulah Jr\source\repos\Clean-Architecture\CaWorkshop.Domain\obj\Debug\net5.0\CaWorkshop.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dad S. Wonkulah Jr\source\repos\Clean-Architecture\CaWorkshop.Domain\obj\Debug\net5.0\CaWorkshop.Domain.AssemblyInfoInputs.cache
+C:\Users\Dad S. Wonkulah Jr\source\repos\Clean-Architecture\CaWorkshop.Domain\obj\Debug\net5.0\CaWorkshop.Domain.AssemblyInfo.cs
+C:\Users\Dad S. Wonkulah Jr\source\repos\Clean-Architecture\CaWorkshop.Domain\obj\Debug\net5.0\CaWorkshop.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Dad S. Wonkulah Jr\source\repos\Clean-Architecture\CaWorkshop.Domain\obj\Debug\net5.0\CaWorkshop.Domain.dll
+C:\Users\Dad S. Wonkulah Jr\source\repos\Clean-Architecture\CaWorkshop.Domain\obj\Debug\net5.0\ref\CaWorkshop.Domain.dll
+C:\Users\Dad S. Wonkulah Jr\source\repos\Clean-Architecture\CaWorkshop.Domain\obj\Debug\net5.0\CaWorkshop.Domain.pdb

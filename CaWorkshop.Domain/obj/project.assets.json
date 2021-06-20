@@ -116,11 +116,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\aWorkshop\\CaWorkshop.Domain\\CaWorkshop.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\Clean-Architecture\\CaWorkshop.Domain\\CaWorkshop.Domain.csproj",
       "projectName": "CaWorkshop.Domain",
-      "projectPath": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\aWorkshop\\CaWorkshop.Domain\\CaWorkshop.Domain.csproj",
+      "projectPath": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\Clean-Architecture\\CaWorkshop.Domain\\CaWorkshop.Domain.csproj",
       "packagesPath": "C:\\Users\\Dad S. Wonkulah Jr\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\aWorkshop\\CaWorkshop.Domain\\obj\\",
+      "outputPath": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\Clean-Architecture\\CaWorkshop.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Dad S. Wonkulah Jr\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -169,7 +169,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.204\\RuntimeIdentifierGraph.json"
       }
     }
   }

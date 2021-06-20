@@ -1,0 +1,298 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\Clean-Architecture\\CaWorkshop.Application.UnitTests\\CaWorkshop.Application.UnitTests.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\Clean-Architecture\\CaWorkshop.Application.UnitTests\\CaWorkshop.Application.UnitTests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\Clean-Architecture\\CaWorkshop.Application.UnitTests\\CaWorkshop.Application.UnitTests.csproj",
+        "projectName": "CaWorkshop.Application.UnitTests",
+        "projectPath": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\Clean-Architecture\\CaWorkshop.Application.UnitTests\\CaWorkshop.Application.UnitTests.csproj",
+        "packagesPath": "C:\\Users\\Dad S. Wonkulah Jr\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\Clean-Architecture\\CaWorkshop.Application.UnitTests\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Dad S. Wonkulah Jr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\Clean-Architecture\\CaWorkshop.Application\\CaWorkshop.Application.csproj": {
+                "projectPath": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\Clean-Architecture\\CaWorkshop.Application\\CaWorkshop.Application.csproj"
+              },
+              "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\Clean-Architecture\\CaWorkshop.Infrastructure\\CaWorkshop.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\Clean-Architecture\\CaWorkshop.Infrastructure\\CaWorkshop.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "FluentAssertions": {
+              "target": "Package",
+              "version": "[5.10.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[5.0.7, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.204\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\Clean-Architecture\\CaWorkshop.Application\\CaWorkshop.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\Clean-Architecture\\CaWorkshop.Application\\CaWorkshop.Application.csproj",
+        "projectName": "CaWorkshop.Application",
+        "projectPath": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\Clean-Architecture\\CaWorkshop.Application\\CaWorkshop.Application.csproj",
+        "packagesPath": "C:\\Users\\Dad S. Wonkulah Jr\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\Clean-Architecture\\CaWorkshop.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Dad S. Wonkulah Jr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\Clean-Architecture\\CaWorkshop.Domain\\CaWorkshop.Domain.csproj": {
+                "projectPath": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\Clean-Architecture\\CaWorkshop.Domain\\CaWorkshop.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.1.1, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[10.2.3, )"
+            },
+            "FluentValidation.DependencyInjectionExtensions": {
+              "target": "Package",
+              "version": "[10.2.3, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.7, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.204\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\Clean-Architecture\\CaWorkshop.Domain\\CaWorkshop.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\Clean-Architecture\\CaWorkshop.Domain\\CaWorkshop.Domain.csproj",
+        "projectName": "CaWorkshop.Domain",
+        "projectPath": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\Clean-Architecture\\CaWorkshop.Domain\\CaWorkshop.Domain.csproj",
+        "packagesPath": "C:\\Users\\Dad S. Wonkulah Jr\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\Clean-Architecture\\CaWorkshop.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Dad S. Wonkulah Jr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.204\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\Clean-Architecture\\CaWorkshop.Infrastructure\\CaWorkshop.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\Clean-Architecture\\CaWorkshop.Infrastructure\\CaWorkshop.Infrastructure.csproj",
+        "projectName": "CaWorkshop.Infrastructure",
+        "projectPath": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\Clean-Architecture\\CaWorkshop.Infrastructure\\CaWorkshop.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Dad S. Wonkulah Jr\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\Clean-Architecture\\CaWorkshop.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Dad S. Wonkulah Jr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\Clean-Architecture\\CaWorkshop.Application\\CaWorkshop.Application.csproj": {
+                "projectPath": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\Clean-Architecture\\CaWorkshop.Application\\CaWorkshop.Application.csproj"
+              },
+              "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\Clean-Architecture\\CaWorkshop.Domain\\CaWorkshop.Domain.csproj": {
+                "projectPath": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\Clean-Architecture\\CaWorkshop.Domain\\CaWorkshop.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.ApiAuthorization.IdentityServer": {
+              "target": "Package",
+              "version": "[5.0.7, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.7, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.204\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

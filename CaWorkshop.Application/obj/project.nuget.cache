@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dCSIbzb0O+zQK07inRrITiZK1izPvNZQ42z/i/PtlWYjQlyPCMdbBQ7qbYX9xkhBpUVgPYyhvIjGfpa8o4AEpg==",
+  "dgSpecHash": "xLqiHVJuDk4780sBkpp4lQu8MfccQymjCmZU9lBoGeVmpjRojspje0nYbwaEUAsVQZyUgHYicfs3wjvFmhY9SQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\aWorkshop\\CaWorkshop.Application\\CaWorkshop.Application.csproj",
+  "projectFilePath": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\Clean-Architecture\\CaWorkshop.Application\\CaWorkshop.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Dad S. Wonkulah Jr\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\Dad S. Wonkulah Jr\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
@@ -11,9 +11,9 @@
     "C:\\Users\\Dad S. Wonkulah Jr\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
     "C:\\Users\\Dad S. Wonkulah Jr\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\9.0.0\\mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",
     "C:\\Users\\Dad S. Wonkulah Jr\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
-    "C:\\Users\\Dad S. Wonkulah Jr\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.6\\microsoft.entityframeworkcore.5.0.6.nupkg.sha512",
-    "C:\\Users\\Dad S. Wonkulah Jr\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.6\\microsoft.entityframeworkcore.abstractions.5.0.6.nupkg.sha512",
-    "C:\\Users\\Dad S. Wonkulah Jr\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\5.0.6\\microsoft.entityframeworkcore.analyzers.5.0.6.nupkg.sha512",
+    "C:\\Users\\Dad S. Wonkulah Jr\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.7\\microsoft.entityframeworkcore.5.0.7.nupkg.sha512",
+    "C:\\Users\\Dad S. Wonkulah Jr\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.7\\microsoft.entityframeworkcore.abstractions.5.0.7.nupkg.sha512",
+    "C:\\Users\\Dad S. Wonkulah Jr\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\5.0.7\\microsoft.entityframeworkcore.analyzers.5.0.7.nupkg.sha512",
     "C:\\Users\\Dad S. Wonkulah Jr\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\5.0.0\\microsoft.extensions.caching.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\Dad S. Wonkulah Jr\\.nuget\\packages\\microsoft.extensions.caching.memory\\5.0.0\\microsoft.extensions.caching.memory.5.0.0.nupkg.sha512",
     "C:\\Users\\Dad S. Wonkulah Jr\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.1\\microsoft.extensions.dependencyinjection.5.0.1.nupkg.sha512",

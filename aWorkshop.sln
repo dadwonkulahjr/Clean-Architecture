@@ -5,11 +5,13 @@ VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "aWorkshop.WebUI", "aWorkshop.WebUI\aWorkshop.WebUI.csproj", "{7D0C2A4D-FDF8-40E8-86B6-BBA9C5071370}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaWorkshop.Domain", "CaWorkshop.Domain\CaWorkshop.Domain.csproj", "{BAF638F8-1661-4216-8310-2984FC85D410}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CaWorkshop.Domain", "CaWorkshop.Domain\CaWorkshop.Domain.csproj", "{BAF638F8-1661-4216-8310-2984FC85D410}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaWorkshop.Application", "CaWorkshop.Application\CaWorkshop.Application.csproj", "{0D08523B-7BC3-4A9F-AD23-795DFAE22BBA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CaWorkshop.Application", "CaWorkshop.Application\CaWorkshop.Application.csproj", "{0D08523B-7BC3-4A9F-AD23-795DFAE22BBA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaWorkshop.Infrastructure", "CaWorkshop.Infrastructure\CaWorkshop.Infrastructure.csproj", "{49837485-049D-464D-98FD-875BD27B98FA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CaWorkshop.Infrastructure", "CaWorkshop.Infrastructure\CaWorkshop.Infrastructure.csproj", "{49837485-049D-464D-98FD-875BD27B98FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaWorkshop.Application.UnitTests", "CaWorkshop.Application.UnitTests\CaWorkshop.Application.UnitTests.csproj", "{5AA5C83E-D429-4425-9904-4481256EE0FC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{49837485-049D-464D-98FD-875BD27B98FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{49837485-049D-464D-98FD-875BD27B98FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{49837485-049D-464D-98FD-875BD27B98FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AA5C83E-D429-4425-9904-4481256EE0FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AA5C83E-D429-4425-9904-4481256EE0FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AA5C83E-D429-4425-9904-4481256EE0FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AA5C83E-D429-4425-9904-4481256EE0FC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

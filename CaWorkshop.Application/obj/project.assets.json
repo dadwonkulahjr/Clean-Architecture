@@ -82,11 +82,11 @@
           "lib/netcoreapp2.0/_._": {}
         }
       },
-      "Microsoft.EntityFrameworkCore/5.0.6": {
+      "Microsoft.EntityFrameworkCore/5.0.7": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.Abstractions": "5.0.6",
-          "Microsoft.EntityFrameworkCore.Analyzers": "5.0.6",
+          "Microsoft.EntityFrameworkCore.Abstractions": "5.0.7",
+          "Microsoft.EntityFrameworkCore.Analyzers": "5.0.7",
           "Microsoft.Extensions.Caching.Memory": "5.0.0",
           "Microsoft.Extensions.DependencyInjection": "5.0.1",
           "Microsoft.Extensions.Logging": "5.0.0",
@@ -101,7 +101,7 @@
           "lib/netstandard2.1/Microsoft.EntityFrameworkCore.dll": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Abstractions/5.0.6": {
+      "Microsoft.EntityFrameworkCore.Abstractions/5.0.7": {
         "type": "package",
         "compile": {
           "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Abstractions.dll": {}
@@ -110,7 +110,7 @@
           "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Abstractions.dll": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Analyzers/5.0.6": {
+      "Microsoft.EntityFrameworkCore.Analyzers/5.0.7": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/_._": {}
@@ -429,45 +429,45 @@
         "version.txt"
       ]
     },
-    "Microsoft.EntityFrameworkCore/5.0.6": {
-      "sha512": "uEqAprroH469aPCZm4iPA1oD8/YDqEQT9QjINkq4HWFA2kRh7Dm2lXX4uZ4MAzpcxoWCqKni2KbLqG8I0KnGqw==",
+    "Microsoft.EntityFrameworkCore/5.0.7": {
+      "sha512": "VAvmiQPdw0PUh3X7k9k7haVnCfQuDgyki9rq5XVk0gXJFeh+bwqPzPrY71A08O5TjnIeK9lEggXDnMuhQXUUww==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore/5.0.6",
+      "path": "microsoft.entityframeworkcore/5.0.7",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "lib/netstandard2.1/Microsoft.EntityFrameworkCore.dll",
         "lib/netstandard2.1/Microsoft.EntityFrameworkCore.xml",
-        "microsoft.entityframeworkcore.5.0.6.nupkg.sha512",
+        "microsoft.entityframeworkcore.5.0.7.nupkg.sha512",
         "microsoft.entityframeworkcore.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Abstractions/5.0.6": {
-      "sha512": "mZCwrwaiE3dSfJZZLihPueGJ2L5/vPU8VPpz21lErYIMmtZmxfSqocXe65bLlwMQ6EO/OcW7P+tvHWPsrAzMTg==",
+    "Microsoft.EntityFrameworkCore.Abstractions/5.0.7": {
+      "sha512": "MM5M9vYDLUXCePUGN2WZ0MkNcNj74sIgyVR9v7tW6abRULtBWPcyZf6zLYhZYpRgPXcahcME+Koscz9kP2DxyA==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.abstractions/5.0.6",
+      "path": "microsoft.entityframeworkcore.abstractions/5.0.7",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Abstractions.dll",
         "lib/netstandard2.1/Microsoft.EntityFrameworkCore.Abstractions.xml",
-        "microsoft.entityframeworkcore.abstractions.5.0.6.nupkg.sha512",
+        "microsoft.entityframeworkcore.abstractions.5.0.7.nupkg.sha512",
         "microsoft.entityframeworkcore.abstractions.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Analyzers/5.0.6": {
-      "sha512": "PhcaRr/5NgTVjm43ITSPSYQGYCUkyuBV1gEDipLnDZI+VsYwyr2HH8pHXDUaY1E6dkZoiWNRt+XNMAsK3qDIKQ==",
+    "Microsoft.EntityFrameworkCore.Analyzers/5.0.7": {
+      "sha512": "ZShPEOZaQhBZqDObU3+kigEmlEGug37F8v/jpQgVs1XfHrLeXVyk+p94DBH4f+bUUHUbsEEcIbU6OhUBtWZztg==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.analyzers/5.0.6",
+      "path": "microsoft.entityframeworkcore.analyzers/5.0.7",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "analyzers/dotnet/cs/Microsoft.EntityFrameworkCore.Analyzers.dll",
         "lib/netstandard2.0/_._",
-        "microsoft.entityframeworkcore.analyzers.5.0.6.nupkg.sha512",
+        "microsoft.entityframeworkcore.analyzers.5.0.7.nupkg.sha512",
         "microsoft.entityframeworkcore.analyzers.nuspec"
       ]
     },
@@ -852,7 +852,7 @@
       "FluentValidation >= 10.2.3",
       "FluentValidation.DependencyInjectionExtensions >= 10.2.3",
       "MediatR.Extensions.Microsoft.DependencyInjection >= 9.0.0",
-      "Microsoft.EntityFrameworkCore >= 5.0.6",
+      "Microsoft.EntityFrameworkCore >= 5.0.7",
       "Microsoft.Extensions.DependencyInjection.Abstractions >= 5.0.0"
     ]
   },
@@ -862,11 +862,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\aWorkshop\\CaWorkshop.Application\\CaWorkshop.Application.csproj",
+      "projectUniqueName": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\Clean-Architecture\\CaWorkshop.Application\\CaWorkshop.Application.csproj",
       "projectName": "CaWorkshop.Application",
-      "projectPath": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\aWorkshop\\CaWorkshop.Application\\CaWorkshop.Application.csproj",
+      "projectPath": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\Clean-Architecture\\CaWorkshop.Application\\CaWorkshop.Application.csproj",
       "packagesPath": "C:\\Users\\Dad S. Wonkulah Jr\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\aWorkshop\\CaWorkshop.Application\\obj\\",
+      "outputPath": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\Clean-Architecture\\CaWorkshop.Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Dad S. Wonkulah Jr\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -883,8 +883,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\aWorkshop\\CaWorkshop.Domain\\CaWorkshop.Domain.csproj": {
-              "projectPath": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\aWorkshop\\CaWorkshop.Domain\\CaWorkshop.Domain.csproj"
+            "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\Clean-Architecture\\CaWorkshop.Domain\\CaWorkshop.Domain.csproj": {
+              "projectPath": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\Clean-Architecture\\CaWorkshop.Domain\\CaWorkshop.Domain.csproj"
             }
           }
         }
@@ -917,7 +917,7 @@
           },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
-            "version": "[5.0.6, )"
+            "version": "[5.0.7, )"
           },
           "Microsoft.Extensions.DependencyInjection.Abstractions": {
             "target": "Package",
@@ -939,7 +939,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.204\\RuntimeIdentifierGraph.json"
       }
     }
   }

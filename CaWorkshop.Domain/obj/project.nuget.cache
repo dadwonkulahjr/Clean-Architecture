@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tB5Kv7HAVEAgg3ftdXI4IIDaWLjUpqFAqOtNQEkMQpJySS9nqTGvysS1Yts7Hz9LyAYQWvy5+SlUSeQdzaIi7w==",
+  "dgSpecHash": "wGPnICJIzTJEY1yjk3j68mnG0rCABGjNCynQ2Z3YCw56ZANSrUW+Ib1gqjC7pt0/x9tH+eqSnVMHEcwOsZ64Bw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\aWorkshop\\CaWorkshop.Domain\\CaWorkshop.Domain.csproj",
+  "projectFilePath": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\Clean-Architecture\\CaWorkshop.Domain\\CaWorkshop.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Dad S. Wonkulah Jr\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
   ],

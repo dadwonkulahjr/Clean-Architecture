@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\aWorkshop\\CaWorkshop.Infrastructure\\CaWorkshop.Infrastructure.csproj": {}
+    "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\Clean-Architecture\\CaWorkshop.Infrastructure\\CaWorkshop.Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\aWorkshop\\CaWorkshop.Application\\CaWorkshop.Application.csproj": {
+    "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\Clean-Architecture\\CaWorkshop.Application\\CaWorkshop.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\aWorkshop\\CaWorkshop.Application\\CaWorkshop.Application.csproj",
+        "projectUniqueName": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\Clean-Architecture\\CaWorkshop.Application\\CaWorkshop.Application.csproj",
         "projectName": "CaWorkshop.Application",
-        "projectPath": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\aWorkshop\\CaWorkshop.Application\\CaWorkshop.Application.csproj",
+        "projectPath": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\Clean-Architecture\\CaWorkshop.Application\\CaWorkshop.Application.csproj",
         "packagesPath": "C:\\Users\\Dad S. Wonkulah Jr\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\aWorkshop\\CaWorkshop.Application\\obj\\",
+        "outputPath": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\Clean-Architecture\\CaWorkshop.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Dad S. Wonkulah Jr\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\aWorkshop\\CaWorkshop.Domain\\CaWorkshop.Domain.csproj": {
-                "projectPath": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\aWorkshop\\CaWorkshop.Domain\\CaWorkshop.Domain.csproj"
+              "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\Clean-Architecture\\CaWorkshop.Domain\\CaWorkshop.Domain.csproj": {
+                "projectPath": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\Clean-Architecture\\CaWorkshop.Domain\\CaWorkshop.Domain.csproj"
               }
             }
           }
@@ -62,7 +62,7 @@
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[5.0.6, )"
+              "version": "[5.0.7, )"
             },
             "Microsoft.Extensions.DependencyInjection.Abstractions": {
               "target": "Package",
@@ -84,18 +84,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.204\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\aWorkshop\\CaWorkshop.Domain\\CaWorkshop.Domain.csproj": {
+    "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\Clean-Architecture\\CaWorkshop.Domain\\CaWorkshop.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\aWorkshop\\CaWorkshop.Domain\\CaWorkshop.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\Clean-Architecture\\CaWorkshop.Domain\\CaWorkshop.Domain.csproj",
         "projectName": "CaWorkshop.Domain",
-        "projectPath": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\aWorkshop\\CaWorkshop.Domain\\CaWorkshop.Domain.csproj",
+        "projectPath": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\Clean-Architecture\\CaWorkshop.Domain\\CaWorkshop.Domain.csproj",
         "packagesPath": "C:\\Users\\Dad S. Wonkulah Jr\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\aWorkshop\\CaWorkshop.Domain\\obj\\",
+        "outputPath": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\Clean-Architecture\\CaWorkshop.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Dad S. Wonkulah Jr\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -144,18 +144,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.204\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\aWorkshop\\CaWorkshop.Infrastructure\\CaWorkshop.Infrastructure.csproj": {
+    "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\Clean-Architecture\\CaWorkshop.Infrastructure\\CaWorkshop.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\aWorkshop\\CaWorkshop.Infrastructure\\CaWorkshop.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\Clean-Architecture\\CaWorkshop.Infrastructure\\CaWorkshop.Infrastructure.csproj",
         "projectName": "CaWorkshop.Infrastructure",
-        "projectPath": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\aWorkshop\\CaWorkshop.Infrastructure\\CaWorkshop.Infrastructure.csproj",
+        "projectPath": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\Clean-Architecture\\CaWorkshop.Infrastructure\\CaWorkshop.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\Dad S. Wonkulah Jr\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\aWorkshop\\CaWorkshop.Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\Clean-Architecture\\CaWorkshop.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Dad S. Wonkulah Jr\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -172,11 +172,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\aWorkshop\\CaWorkshop.Application\\CaWorkshop.Application.csproj": {
-                "projectPath": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\aWorkshop\\CaWorkshop.Application\\CaWorkshop.Application.csproj"
+              "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\Clean-Architecture\\CaWorkshop.Application\\CaWorkshop.Application.csproj": {
+                "projectPath": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\Clean-Architecture\\CaWorkshop.Application\\CaWorkshop.Application.csproj"
               },
-              "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\aWorkshop\\CaWorkshop.Domain\\CaWorkshop.Domain.csproj": {
-                "projectPath": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\aWorkshop\\CaWorkshop.Domain\\CaWorkshop.Domain.csproj"
+              "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\Clean-Architecture\\CaWorkshop.Domain\\CaWorkshop.Domain.csproj": {
+                "projectPath": "C:\\Users\\Dad S. Wonkulah Jr\\source\\repos\\Clean-Architecture\\CaWorkshop.Domain\\CaWorkshop.Domain.csproj"
               }
             }
           }
@@ -193,15 +193,15 @@
           "dependencies": {
             "Microsoft.AspNetCore.ApiAuthorization.IdentityServer": {
               "target": "Package",
-              "version": "[5.0.6, )"
+              "version": "[5.0.7, )"
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[5.0.6, )"
+              "version": "[5.0.7, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[5.0.6, )"
+              "version": "[5.0.7, )"
             }
           },
           "imports": [
@@ -219,7 +219,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.204\\RuntimeIdentifierGraph.json"
         }
       }
     }
