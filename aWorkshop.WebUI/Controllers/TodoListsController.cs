@@ -10,11 +10,13 @@ using MediatR;
 using CaWorkshop.Application.TodoLists.Commands.CreateTodoList;
 using CaWorkshop.Application.TodoLists.Commands.UpdateTodoList;
 using CaWorkshop.Application.TodoLists.Commands.DeleteTodoList;
+using Microsoft.AspNetCore.Authorization;
 
 namespace aWorkshop.WebUI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class TodoListsController : ControllerBase
     {
         private readonly IMediator _mediator;

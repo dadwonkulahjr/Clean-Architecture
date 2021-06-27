@@ -1,5 +1,7 @@
 ﻿using CaWorkshop.Application.Common.Interfaces;
 using CaWorkshop.Domain.Entities;
+using CaWorkshop.Infrastructure.Common.Interfaces;
+using CaWorkshop.Infrastructure.Persistence.Interceptors;
 using IdentityServer4.EntityFramework.Options;
 using Microsoft.AspNetCore.ApiAuthorization.IdentityServer;
 using Microsoft.EntityFrameworkCore;
@@ -12,14 +14,17 @@ namespace CaWorkshop.Infrastructure.Persistence
 {
     public class ApplicationDbContext : ApiAuthorizationDbContext<ApplicationUser>, IApplicationDbContext
     {
+        private readonly AuditEntitiesSaveChangesInterceptor _auditEntitiesSaveChangesInterceptor;
         ////public DbSet<TodoItem> TodoItems { get; set; }
 
         ////public DbSet<TodoList> TodoLists { get; set; }
 
         public ApplicationDbContext(
             DbContextOptions options,
-            IOptions<OperationalStoreOptions> operationalStoreOptions) : base(options, operationalStoreOptions)
+            IOptions<OperationalStoreOptions> operationalStoreOptions,
+            ICurrentUserService currentUserService = null) : base(options, operationalStoreOptions)
         {
+            _auditEntitiesSaveChangesInterceptor = new AuditEntitiesSaveChangesInterceptor(currentUserService);
         }
 
         //public DbSet<TodoList> ToDoLists { get => throw new System.NotImplementedException(); set => throw new System.NotImplementedException(); }
@@ -33,6 +38,7 @@ namespace CaWorkshop.Infrastructure.Persistence
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
+            optionsBuilder.AddInterceptors(_auditEntitiesSaveChangesInterceptor);
             optionsBuilder
                 .LogTo(Console.WriteLine)
                 .EnableDetailedErrors();

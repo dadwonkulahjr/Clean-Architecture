@@ -1,17 +1,21 @@
 using aWorkshop.WebUI.Filters;
+using aWorkshop.WebUI.Services;
 using CaWorkshop.Application;
-using CaWorkshop.Application.TodoLists.Queries.GetTodoLists;
 using CaWorkshop.Infrastructure;
-using MediatR;
+using CaWorkshop.Infrastructure.Common.Interfaces;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.SpaServices.AngularCli;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using NSwag;
+using NSwag.Generation.Processors.Security;
+using System.Linq;
 
 namespace aWorkshop.WebUI
 {
+    //Page 129
     public class Startup
     {
         public Startup(IConfiguration configuration)
@@ -26,6 +30,8 @@ namespace aWorkshop.WebUI
 
             services.AddInfrastructureServices(Configuration);
             services.AddApplicationServices();
+            services.AddHttpContextAccessor();
+            services.AddScoped<ICurrentUserService, CurrentUserService>();
             //services.AddMediatR(typeof(GetTodoListsQueryHandler));
             //services.AddMediatorServices();
 
@@ -49,10 +55,10 @@ namespace aWorkshop.WebUI
             {
                 opt.Filters.Add(new ApiExceptionFilterAttribute());
             });
-                    //.AddFluentValidation(fv =>
-                    //{
-                    //    fv.RegisterValidatorsFromAssemblyContaining<IApplicationDbContext>();
-                    //});
+            //.AddFluentValidation(fv =>
+            //{
+            //    fv.RegisterValidatorsFromAssemblyContaining<IApplicationDbContext>();
+            //});
             services.AddRazorPages();
             // In production, the Angular files will be served from this directory
             services.AddSpaStaticFiles(configuration =>
@@ -62,8 +68,18 @@ namespace aWorkshop.WebUI
             services.AddOpenApiDocument(configure =>
             {
                 configure.Title = "CaWorkshop API";
+                configure.AddSecurity("JWT", Enumerable.Empty<string>(),
+                    new OpenApiSecurityScheme()
+                    {
+                        Type = OpenApiSecuritySchemeType.ApiKey,
+                        Name = "Authorization",
+                        In = OpenApiSecurityApiKeyLocation.Header,
+                        Description = "Type into the textbox: Bearer {your JWT name}"
+                    });
+
+                configure.OperationProcessors.Add(new AspNetCoreOperationSecurityScopeProcessor("JWT"));
             });
-            
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -92,7 +108,7 @@ namespace aWorkshop.WebUI
             app.UseSwaggerUi3();
 
             app.UseRouting();
-         
+
 
 
             app.UseAuthentication();
@@ -108,7 +124,7 @@ namespace aWorkshop.WebUI
 
             app.UseSpa(spa =>
             {
-              
+
 
                 spa.Options.SourcePath = "ClientApp";
 
@@ -116,9 +132,9 @@ namespace aWorkshop.WebUI
                 {
                     spa.UseAngularCliServer(npmScript: "start");
                     //spa.UseProxyToSpaDevelopmentServer("https://localhost:44327/");
-                
-                
-                
+
+
+
                 }
             });
         }

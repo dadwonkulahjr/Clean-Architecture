@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Authentication;
 using CaWorkshop.Application.Common.Interfaces;
 using MediatR;
 using CaWorkshop.Application.Common.Behaviours;
+using CaWorkshop.Infrastructure.Identity;
 
 namespace CaWorkshop.Infrastructure
 {
@@ -31,6 +32,7 @@ namespace CaWorkshop.Infrastructure
                 return p.GetRequiredService<ApplicationDbContext>();
             });
 
+            services.AddScoped<IIdentityService, IdentityService>();
             services.AddTransient(typeof(IPipelineBehavior<,>),
                  typeof(ValidationBehaviour<,>));
             return services;
