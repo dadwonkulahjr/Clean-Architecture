@@ -31,7 +31,8 @@ namespace CaWorkshop.Infrastructure
             {
                 return p.GetRequiredService<ApplicationDbContext>();
             });
-
+            services.AddTransient(typeof(IPipelineBehavior<,>),
+                            typeof(UnhandledExceptionBehaviour<,>));
             services.AddScoped<IIdentityService, IdentityService>();
             services.AddTransient(typeof(IPipelineBehavior<,>),
                  typeof(ValidationBehaviour<,>));

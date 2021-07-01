@@ -77,6 +77,8 @@ namespace aWorkshop.WebUI
                         Description = "Type into the textbox: Bearer {your JWT name}"
                     });
 
+           
+
                 configure.OperationProcessors.Add(new AspNetCoreOperationSecurityScopeProcessor("JWT"));
             });
 

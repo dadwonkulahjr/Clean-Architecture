@@ -1580,6 +1580,7 @@
           "CaWorkshop.Domain": "1.0.0",
           "FluentValidation": "10.2.3",
           "FluentValidation.DependencyInjectionExtensions": "10.2.3",
+          "MediatR": "9.0.0",
           "MediatR.Extensions.Microsoft.DependencyInjection": "9.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.7",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0"
