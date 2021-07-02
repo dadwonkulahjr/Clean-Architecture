@@ -13,6 +13,10 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+		<PackageReference Include="AspNetCore.HealthChecks.Network" Version="5.0.4" />
+		<PackageReference Include="AspNetCore.HealthChecks.UI" Version="5.0.1" />
+		<PackageReference Include="AspNetCore.HealthChecks.UI.Client" Version="5.0.1" />
+		<PackageReference Include="AspNetCore.HealthChecks.UI.InMemory.Storage" Version="5.0.1" />
 		<PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="5.0.7" />
 		<PackageReference Include="Microsoft.AspNetCore.ApiAuthorization.IdentityServer" Version="5.0.7" />
 		<PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="5.0.7" />
@@ -24,6 +28,7 @@
 			<PrivateAssets>all</PrivateAssets>
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 		</PackageReference>
+		<PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore" Version="5.0.7" />
 		<PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.2" />
 		<PackageReference Include="NSwag.AspNetCore" Version="13.11.3" />
 		<PackageReference Include="NSwag.MSBuild" Version="13.11.3">
@@ -55,9 +60,9 @@
 		<Exec WorkingDirectory="$(SpaRoot)" Command="npm install" />
 	</Target>
 
-	<Target Name="NSwag" AfterTargets="Build" Condition="'$(Configuration)' == 'Debug'">
+	<Target Name="NSwag" AfterTargets="Build" Condition="'$(Configuration)'=='Debug'">
 		<Copy SourceFiles="@(Reference)" DestinationFolder="$(OutDir)References" />
-		<Exec Command="$(NSwagExe_Net50) run /variables:Configuration=$(Configuration)" />
+		<Exec Command="nswag run nswag.json /variables:Configuration=$(Configuration)'=='Debug')" />
 		<RemoveDir Directories="$(OutDir)References" />
 	</Target>
 	

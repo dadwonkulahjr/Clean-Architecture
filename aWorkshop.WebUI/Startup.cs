@@ -1,13 +1,18 @@
 using aWorkshop.WebUI.Filters;
 using aWorkshop.WebUI.Services;
 using CaWorkshop.Application;
+using CaWorkshop.Application.Common.Interfaces;
 using CaWorkshop.Infrastructure;
 using CaWorkshop.Infrastructure.Common.Interfaces;
+using CaWorkshop.Infrastructure.Persistence;
+using HealthChecks.UI.Client;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.SpaServices.AngularCli;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Diagnostics.HealthChecks;
 using Microsoft.Extensions.Hosting;
 using NSwag;
 using NSwag.Generation.Processors.Security;
@@ -59,6 +64,17 @@ namespace aWorkshop.WebUI
             //{
             //    fv.RegisterValidatorsFromAssemblyContaining<IApplicationDbContext>();
             //});
+
+            services.AddHealthChecksUI()
+                    .AddInMemoryStorage();
+
+            services.AddHealthChecks()
+                    .AddDbContextCheck<ApplicationDbContext>()
+                    .AddSmtpHealthCheck(options =>
+                    {
+                        options.Host = "localhost";
+                        options.Port = 25;
+                    });
             services.AddRazorPages();
             // In production, the Angular files will be served from this directory
             services.AddSpaStaticFiles(configuration =>
@@ -106,8 +122,11 @@ namespace aWorkshop.WebUI
                 app.UseSpaStaticFiles();
             }
 
-            app.UseOpenApi();
-            app.UseSwaggerUi3();
+           
+            app.UseSwaggerUi3(settings =>
+            {
+                settings.DocumentPath = "/api/specification.json";
+            });
 
             app.UseRouting();
 
@@ -122,6 +141,13 @@ namespace aWorkshop.WebUI
                     name: "default",
                     pattern: "{controller}/{action=Index}/{id?}");
                 endpoints.MapRazorPages();
+
+                endpoints.MapHealthChecks("/health", new HealthCheckOptions()
+                {
+
+                    ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
+                }); 
+                endpoints.MapHealthChecksUI();
             });
 
             app.UseSpa(spa =>

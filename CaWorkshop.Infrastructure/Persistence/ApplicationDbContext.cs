@@ -20,7 +20,7 @@ namespace CaWorkshop.Infrastructure.Persistence
         ////public DbSet<TodoList> TodoLists { get; set; }
 
         public ApplicationDbContext(
-            DbContextOptions options,
+            DbContextOptions<ApplicationDbContext> options,
             IOptions<OperationalStoreOptions> operationalStoreOptions,
             ICurrentUserService currentUserService = null) : base(options, operationalStoreOptions)
         {
